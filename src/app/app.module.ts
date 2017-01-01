@@ -6,10 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 
 import { MaterialModule } from '@angular/material';
+import { PodcastPlayerComponent } from './podcast-player/podcast-player.component';
+import { PodcastComponent } from './podcast/podcast.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PodcastPlayerComponent,
+    PodcastComponent
   ],
   imports: [
     BrowserModule,
