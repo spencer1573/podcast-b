@@ -1,4 +1,7 @@
 export let podcastAngular: any = {
+  'feed': {
+    'image': 'https://s3.amazonaws.com/devchat.tv/angular-thumb-1400x1400.jpg'
+  },
   'items': [
     {
       'title': 'AiA 125 API Powered Components for Severless Applications with Travis Tidwell',

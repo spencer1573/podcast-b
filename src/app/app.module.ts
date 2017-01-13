@@ -9,6 +9,7 @@ import { MaterialModule } from '@angular/material';
 import { PodcastPlayerComponent } from './podcast-player/podcast-player.component';
 import { PodcastComponent } from './podcast/podcast.component';
 import { ROUTING } from './app.routing';
+import { PodcastListComponent } from './podcast-list/podcast-list.component';
 
 //import { RouterModule, Routes } from '@angular/router';
 
@@ -17,7 +18,8 @@ import { ROUTING } from './app.routing';
   declarations: [
     AppComponent,
     PodcastPlayerComponent,
-    PodcastComponent
+    PodcastComponent,
+    PodcastListComponent
   ],
   imports: [
     BrowserModule,
