@@ -8,6 +8,10 @@ import { AppComponent } from './app.component';
 import { MaterialModule } from '@angular/material';
 import { PodcastPlayerComponent } from './podcast-player/podcast-player.component';
 import { PodcastComponent } from './podcast/podcast.component';
+import { ROUTING } from './app.routing';
+
+//import { RouterModule, Routes } from '@angular/router';
+
 
 @NgModule({
   declarations: [
@@ -19,8 +23,11 @@ import { PodcastComponent } from './podcast/podcast.component';
     BrowserModule,
     FormsModule,
     MaterialModule.forRoot(),
+//    RouterModule.forRoot(appRoutes),
+    ROUTING,
     HttpModule
   ],
+//  providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
   providers: [],
   bootstrap: [AppComponent]
 })

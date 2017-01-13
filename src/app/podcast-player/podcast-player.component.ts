@@ -6,8 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./podcast-player.component.css']
 })
 export class PodcastPlayerComponent implements OnInit {
+  play: boolean;
 
-  constructor() { }
+  constructor() {
+    this.play = false;
+  }
+
 
   ngOnInit() {
   }
