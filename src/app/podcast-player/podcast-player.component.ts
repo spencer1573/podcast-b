@@ -8,17 +8,21 @@ import { podcastAngular } from '../podcasts-data/AiA';
 })
 export class PodcastPlayerComponent implements OnInit {
   // play: boolean;
-  podcastName: string;
+  podcastName: any;
+  podcasts: any;
+  podcastImage: any;
 
   constructor() {
     // this.play = false;
     this.podcastName = '';
+    this.podcasts = podcastAngular["items"];
+    this.podcastImage = podcastAngular["feed"]["image"];
 
   }
 
 
   ngOnInit() {
-    //this.podcastName = podcastAngular[0].title;
+    this.podcastName = podcastAngular["items"][0]["title"];
   }
 
 }
